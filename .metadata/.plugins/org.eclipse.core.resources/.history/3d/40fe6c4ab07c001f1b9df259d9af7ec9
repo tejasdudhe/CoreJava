@@ -1,0 +1,20 @@
+package day5_HW;
+
+public class Bowler extends Cricketer {
+	int wicketsTaken;
+	double hatricks;
+
+	public Bowler() {
+		super();
+
+	}
+
+	public Bowler(String name, int age, String team, String role, int matchesPlayed, int wicketsTaken,double hatricks) {
+		
+		super(name, age, team, role, matchesPlayed);
+		this.wicketsTaken = wicketsTaken;
+		this.hatricks = hatricks;
+
+	}
+
+}

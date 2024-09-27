@@ -1,0 +1,96 @@
+package day3_task;
+
+import java.util.Scanner;
+
+public class BankAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Account[] Acc = new Account[50];
+
+		int op;
+		int currNewAcc = 0;
+
+		do {
+			System.out.println(">>>>>>>>>>>>>|| BANK ||<<<<<<<<<<<<<<<");
+			System.out.println("Welcome To ABC BANK");
+			System.out.println();
+
+			System.out.println("Enter 1 to Create Account : ");
+			System.out.println("Enter 2 to WithDraw Money : ");
+			System.out.println("Enter 3 to Deposit Money : ");
+			System.out.println("Enter 4 to Transfer Money : ");
+			System.out.println("Enter 5 to Display account details : ");
+			System.out.println("Enter 6 to Display Display Account by City");
+			System.out.println("Enter 7 to Display Account by Account Number");
+			System.out.println("8. Exit");
+			System.out.print("Enter your choice: ");
+
+			System.out.println("Enter your choice : ");
+			op = sc.nextInt();
+
+			switch (op) {
+
+			case 1:
+
+				String name;
+				double bal;
+				String city;
+
+				System.out.print("Enter Your Name : ");
+				sc.nextLine();
+				System.out.print("Enter Your starting Balance : ");
+				sc.nextDouble();
+				System.out.print("Enter Your City : ");
+				sc.nextLine();
+
+				Acc[currNewAcc++] = new Account(name, bal, city);
+				System.out.println("Account Created Successfully!");
+				break;
+
+			case 2:
+
+				 System.out.print("Enter Account Number: ");
+                 int wdAccNum = sc.nextInt();
+                 Account withdrawAcc = setCurrAccount(Acc,wdAccNum);
+                 
+                 if (withdrawAcc != null) {
+                     System.out.print("Enter Amount to Withdraw: ");
+                     double wdAmt = sc.nextDouble();
+                     withdrawAcc.withDrawMoney(wdAmt);
+                 } else {
+                     System.out.println("Account not found!");
+                 }
+
+				break;
+			case 3:
+
+				System.out.print("Enter Account Number: ");
+                int depAccNum = sc.nextInt();
+                Account depositAcc = setCurrAccount(Acc,depAccNum);
+
+				break;
+			case 4:
+
+				break;
+
+			default:
+				break;
+			}
+
+		} while (8);
+
+	}
+
+	public static Account setCurrAccount(Account[] Acc,int accNum) {
+		for (Account account : Acc) {
+            if (account != null && account.accNumber == accNum) {
+                return account;
+            }
+        }
+        return null;
+    }
+	}
+
+}

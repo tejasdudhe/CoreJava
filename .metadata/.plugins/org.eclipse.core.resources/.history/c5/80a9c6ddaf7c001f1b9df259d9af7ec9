@@ -1,0 +1,26 @@
+package day5_HW;
+
+public class HockyPlayer extends Player {
+	String position;
+	int goalsScored;
+
+	public HockyPlayer() {
+		super();
+		Scanner s = new Scanner(System.in);
+
+		System.out.println("Enter Player Position :");
+		position = s.nextLine();
+
+		System.out.println("Enter goal Scored by Player in Hockey :");
+		age = s.nextInt();
+
+		
+	}
+
+	public HockyPlayer(String name, int age, String team, String position, int goalsScored) {
+		super(name, age, team);
+		this.position = position;
+		this.goalsScored = goalsScored;
+	}
+
+}

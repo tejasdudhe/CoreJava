@@ -1,0 +1,18 @@
+package day5_1;
+
+public class Manager  extends Employee{
+	
+	double Petrol_Allowance;
+	double Food_Allowance;
+	double Other_Allowance;
+	
+	public Manager() {
+		
+		Petrol_Allowance = 0.08*(bSal);
+		Food_Allowance = 0.13*(bSal);
+		Other_Allowance = 0.03*(bSal);
+		
+		System.out.println("Manager constructor executed.......");
+	}
+
+}

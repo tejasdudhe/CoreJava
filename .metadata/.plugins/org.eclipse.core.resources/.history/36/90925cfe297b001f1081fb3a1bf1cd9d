@@ -1,0 +1,20 @@
+package day3_task;
+
+public class Account {
+	
+	int accNumber;
+	String custName;
+	double balance
+	String city;
+	
+	static int genId;
+	
+	static {
+		genId=1001;
+	}
+
+	public Account() {
+		
+	}
+
+}

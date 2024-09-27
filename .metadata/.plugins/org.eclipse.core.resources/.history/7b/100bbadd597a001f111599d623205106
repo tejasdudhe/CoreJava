@@ -1,0 +1,51 @@
+package day2_1;
+
+public class ChairMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Chair{
+	
+	String size;
+	String type;
+	String color;
+	int price;
+	
+	
+	public String getSize() {
+		return size;
+	}
+	
+	public void setSize(String si) {
+		size = si;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public void setType(String ty) {
+		type = ty;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	
+	public void setColor(String col) {
+		color = col;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int pri) {
+		price = pri;
+	}
+	
+	
+}

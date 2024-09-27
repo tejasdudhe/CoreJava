@@ -1,0 +1,30 @@
+package day5_HW;
+
+import java.util.Scanner;
+
+public class Cricketer extends Player {
+
+	String role;
+	int matchesPlayed;
+
+	public Cricketer() {
+		super();
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter Player Position :");
+		role = sc.nextLine();
+
+		System.out.println("Enter goal Scored by Player :");
+		matchesPlayed = sc.nextInt();
+
+	}
+
+	public Cricketer(String name, int age, String team, String role, int matchesPlayed) {
+		super(name, age, team);
+		this.role = role;
+		this.matchesPlayed = matchesPlayed;
+
+	}
+
+}

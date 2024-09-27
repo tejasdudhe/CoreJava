@@ -1,0 +1,18 @@
+package day5_HW;
+
+public class Batsman extends Cricketer {
+
+	int runsScored;
+	int centuries;
+
+	public Batsman() {
+		super();
+	}
+
+	public Batsman(String name, int age, String team, String role, int matchesPlayed, int runsScored, int centuries) {
+		super(name, age, team, role, matchesPlayed);
+		this.runsScored = runsScored;
+		this.centuries = centuries;
+	}
+
+}

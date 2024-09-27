@@ -1,0 +1,44 @@
+package day2_1;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Customer C = new Customer();
+		C.print();
+		Customer C = new Customer(102,"Pranav","Pune");
+		C.print();
+		
+	}
+
+}
+
+class Customer{
+	
+	int customerId;
+	String custname;
+	String city;
+	
+	
+	public Customer()
+	{
+		customerId = 101;
+		custname = "Akash";
+		city = "Mumbai";
+	}
+	
+	public Customer(int id,String cName, String cty)
+	{
+		customerId = id;
+		custname = cName;
+		city = cty;
+		
+	}
+	
+	public void print() {
+		System.out.println("CustomerId : "+customerId);
+		System.out.println("CustName : "+custname);
+		System.out.println("City : "+city);
+	}
+}

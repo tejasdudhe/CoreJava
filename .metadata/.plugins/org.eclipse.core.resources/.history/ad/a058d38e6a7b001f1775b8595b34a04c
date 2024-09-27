@@ -1,0 +1,47 @@
+package day3_task;
+
+import java.util.Scanner;
+
+public class Account {
+
+	int accNumber;
+	String custName;
+	double balance;
+	String city;
+
+	static int genId;
+
+	static {
+		genId = 1001;
+	}
+
+	public Account(String custName, double balance, String city) {
+		this.accNumber = genId++;
+		this.custName = custName;
+		this.balance = balance;
+		this.city = city;
+	}
+
+	public  void withDrawMoney(Account a, double amt) {
+		a.balance -= amt;
+	}
+
+	public  void depositMoney(Account a, double amt) {
+		a.balance += amt;
+	}
+
+	public  void transferMoney(Account accFrom, Account accTo, double amt) {
+		accFrom.balance -= amt;
+		accTo.balance += amt;
+
+	}
+	
+	public void display(Account acc)
+	{
+		System.out.println("Account Number : " +acc.accNumber);
+		System.out.println("Name : " +acc.custName);
+		System.out.println("Account Balance : " +acc.balance);
+		System.out.println("City : " +acc.city+"\n");
+	}
+
+}

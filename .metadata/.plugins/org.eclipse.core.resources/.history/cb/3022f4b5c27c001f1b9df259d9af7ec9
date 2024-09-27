@@ -1,0 +1,9 @@
+package day5_1;
+
+public class Manager {
+	
+	double Petrol_Allowance;
+	double Food_Allowance;
+	double Other_Allowance;
+
+}

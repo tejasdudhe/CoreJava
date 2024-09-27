@@ -1,0 +1,28 @@
+package day5_HW;
+
+import java.util.Scanner;
+
+public class FootBallPlayer extends Player {
+	String position;
+	int goalsScored;
+
+	public FootBallPlayer() {
+		super();
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter Player Position :");
+		position = sc.nextLine();
+
+		System.out.println("Enter goal Scored by Player in football :");
+		age = sc.nextInt();
+
+	}
+
+	public FootBallPlayer(String name, int age, String team, String position, int goalsScored) {
+		super(name, age, team);
+		this.position = position;
+		this.goalsScored = goalsScored;
+
+	}
+
+}

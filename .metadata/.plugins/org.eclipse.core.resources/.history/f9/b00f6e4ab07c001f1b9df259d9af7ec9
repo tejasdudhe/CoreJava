@@ -1,0 +1,20 @@
+package day5_HW;
+
+public class Player {
+	
+	String name;
+    int age;
+    String team;
+    
+    public Player()
+    {
+    	
+    }
+
+	public Player(String name, int age, String team) {
+		this.name = name;
+		this.age = age;
+		this.team = team;
+	}
+	
+}

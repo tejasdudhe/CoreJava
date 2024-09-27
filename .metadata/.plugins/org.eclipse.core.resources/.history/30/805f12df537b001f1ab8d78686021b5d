@@ -1,0 +1,89 @@
+package day3_task;
+
+import java.util.Scanner;
+
+public class BankAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Account[] Acc = new Account[50];
+		
+		int op;
+		int currNewAcc=0;
+		Account currentAccount;
+		
+
+		do {
+			System.out.println(">>>>>>>>>>>>>|| BANK ||<<<<<<<<<<<<<<<");
+			System.out.println("Welcome To ABC BANK");
+			System.out.println();
+
+			System.out.println("Enter 1 to Create Account : ");
+			System.out.println("Enter 2 to WithDraw Money : ");
+			System.out.println("Enter 3 to Deposit Money : ");
+			System.out.println("Enter 4 to Transfer Money : ");
+			System.out.println("Enter 5 to display account details : ");
+			System.out.println("Enter 6 to Exit : ");
+			System.out.println();
+
+			System.out.println("Enter the Option : ");
+			op = sc.nextInt();
+			
+			currentAccount = setCurrAccount();
+			
+
+			switch (op) {
+			
+			case 1:
+				
+				String name;
+				double bal;
+				String city;
+				
+				System.out.print("Enter Your Name : ");
+				sc.nextLine();
+				System.out.print("Enter Your starting Balance : ");
+				sc.nextDouble();
+				System.out.print("Enter Your City : ");
+				sc.nextLine();
+				
+				
+				Acc[currNewAcc++] = new Account(name,bal,city);
+				
+
+				break;
+				
+			case 2:
+				
+				double amount;
+				System.out.println("/nEnter the Amount to withDraw Money : ");
+				
+
+				break;
+			case 3:
+				
+				double amount;
+				System.out.println("/nEnter the Amount to Deposit Money : ");
+				amount = sc.nextDouble();
+				
+				break;
+			case 4:
+
+				break;
+
+			default:
+				break;
+			}
+
+		} while (6);
+
+	}
+	
+	public static Account setCurrAccount(int id,Account[] Acc )
+	{
+		
+		return 
+	}
+
+}

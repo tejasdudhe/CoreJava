@@ -1,0 +1,20 @@
+package day5_HW;
+
+public class Cricketer extends Player {
+
+	String role;
+	int matchesPlayed;
+
+	public Cricketer() {
+		super();
+
+	}
+
+	public Cricketer(String name, int age, String team, String role, int matchesPlayed) {
+		super(name, age, team);
+		this.role = role;
+		this.matchesPlayed = matchesPlayed;
+
+	}
+
+}

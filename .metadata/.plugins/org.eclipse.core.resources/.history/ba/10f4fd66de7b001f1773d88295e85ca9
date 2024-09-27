@@ -1,0 +1,63 @@
+
+/*
+ * Program 28 : Create a class Book containing Book_Id,Book_name, author and Price
+   as a member fields and write properties and necessary member methods for the
+   following 
+   a. To Accept Book Information.
+   b. Update book Information by Book_Id.  
+   b. Display All book details.
+   c. Display book details of a given author.
+   d. Display book details of Book_Id.
+   */
+
+package day4_1;
+
+public class BookStore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int op;
+
+		do {
+			System.out.println("\n>>>>>>>>>>>>>|| Book Store ||<<<<<<<<<<<<<<<");
+			System.out.println("Welcome To ABC Book Store ");
+			System.out.println();
+			System.out.println("Enter 1 to do New Entry on Book Store.");
+			System.out.println("Enter 2 to Update Book Information.");
+			System.out.println("Enter 3 to Display All Books in Book Store");
+			System.out.println("Enter 4 to Display Books of Author.");
+			System.out.println("Enter 5 to Display Books by Id.");
+			System.out.println("Enter 6 to Exit\n");
+
+			System.out.print("Enter your choice : ");
+			op = sc.nextInt();
+
+			switch (op) {
+			case 1:
+
+				break;
+
+			case 2:
+
+				break;
+			case 3:
+
+				break;
+			case 4:
+
+				break;
+			case 5:
+
+				break;
+			case 6:
+
+				break;
+
+			default:
+				break;
+			}
+
+		} while (op != 6);
+	}
+
+}

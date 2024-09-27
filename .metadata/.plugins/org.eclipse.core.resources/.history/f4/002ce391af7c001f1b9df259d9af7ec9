@@ -1,0 +1,18 @@
+package day5_HW;
+
+public class HockyPlayer extends Player {
+	String position;
+	int goalsScored;
+	
+	public HockyPlayer()
+	{
+		super();
+	}
+
+	public HockyPlayer(String name, int age, String team, String position, int goalsScored) {
+		super(name,age,team);
+		this.position = position;
+		this.goalsScored = goalsScored;
+	}
+	
+}

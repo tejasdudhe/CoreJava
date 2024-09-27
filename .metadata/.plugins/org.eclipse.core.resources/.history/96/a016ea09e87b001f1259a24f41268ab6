@@ -1,0 +1,28 @@
+package day4_1;
+
+import java.util.Scanner;
+
+public class Book {
+	int Book_Id;
+	String Book_Name;
+	String Author;
+	float Price;
+
+	public void acceptBook() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("\nEnter Book Id : ");
+		this.Book_Id= sc.nextInt();
+		
+		System.out.print("\nEnter Book Name : ");
+		this.Book_Name= sc.nextLine();
+		
+		System.out.print("\nEnter Book Author : ");
+		this.Author= sc.nextLine();
+		
+		System.out.print("\nEnter Book Id : ");
+		this.Price= sc.nextFloat();	
+		
+		System.out.println("\n The Book Entry is Successfull......");
+	}
+}

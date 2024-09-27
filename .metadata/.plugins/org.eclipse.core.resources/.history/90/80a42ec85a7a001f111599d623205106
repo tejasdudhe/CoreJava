@@ -1,0 +1,37 @@
+package day2_1;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Customer{
+	
+	int customerId;
+	String custname;
+	String city;
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int custId) {
+		customerId = custId;
+	}
+	public String getCustname() {
+		return custname;
+	}
+	public void setCustname(String cname) {
+		custname = cname;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String cty) {
+		city = cty;
+	}
+	
+	
+}
