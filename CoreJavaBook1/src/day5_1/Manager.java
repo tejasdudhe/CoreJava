@@ -18,8 +18,8 @@ public class Manager extends Employee {
 	@Override
 	public String toString() {
 
-		super.toString();
-		return "Petrol Allowance of Manager : " + Petrol_Allowance + "\n Food Allowance of Manager : " + Food_Allowance
+		
+		return super.toString()+"Petrol Allowance of Manager : " + Petrol_Allowance + "\n Food Allowance of Manager : " + Food_Allowance
 				+ "\n  Other Allowance of Manager :" + Other_Allowance + "\n";
 	}
 

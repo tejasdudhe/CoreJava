@@ -28,9 +28,10 @@ public class MarketingExecutive extends Employee {
 	@Override
 	public String toString() {
 
-		super.toString();
-		return "KiloMeter Travelled by MarketingExecutive : " + km_Travelled + "\n Food Allowance of MarketingExecutive : " + tour_Allowance
+		
+		return super.toString()+"KiloMeter Travelled by MarketingExecutive : " + km_Travelled + "\n Food Allowance of MarketingExecutive : " + tour_Allowance
 				+ "\n TelePhone Allowance MarketingExecutive :" + tele_Allowance + "\n";
+		
 	}
 
 }
