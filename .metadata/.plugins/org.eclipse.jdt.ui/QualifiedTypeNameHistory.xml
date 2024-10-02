@@ -12,7 +12,24 @@
     <fullyQualifiedTypeName name="day5_HW.Player"/>
     <fullyQualifiedTypeName name="day5_HW.HockyPlayer"/>
     <fullyQualifiedTypeName name="day5_1.Employee"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="day5_1.Manager"/>
+    <fullyQualifiedTypeName name="day6_Staurday.Book"/>
+    <fullyQualifiedTypeName name="day6_saturday2.Ticket"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="day7_1.MyShape"/>
+    <fullyQualifiedTypeName name="day7_1.Rectangle"/>
+    <fullyQualifiedTypeName name="day7_1.Circle"/>
+    <fullyQualifiedTypeName name="day7_2.MobileClass"/>
+    <fullyQualifiedTypeName name="day7_2.SimplePhone"/>
+    <fullyQualifiedTypeName name="java.lang.NegativeArraySizeException"/>
+    <fullyQualifiedTypeName name="day7_2.MobilePhone"/>
+    <fullyQualifiedTypeName name="day7_2.SmartPhone"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="day7_3.RemoteDevice"/>
+    <fullyQualifiedTypeName name="day7_3.TV"/>
+    <fullyQualifiedTypeName name="day7_3.DVDPlayer"/>
+    <fullyQualifiedTypeName name="day7_5.Student"/>
+    <fullyQualifiedTypeName name="day7_5.Hostellers"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
