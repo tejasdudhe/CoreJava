@@ -17,12 +17,12 @@ public class Stack {
 		top = -1;
 	}
 	
-	public boolean push(int item)
+	public boolean push(int item) throws StackException
 	{
 		if(isFull())
 		{
-			System.err.println("Stack is Full....");
-			return false;
+//			System.err.println("Stack is Full....");
+			throw new StackException("Stack is Full....S");
 		}
 		
 		this.data[++top] = item;
@@ -30,23 +30,23 @@ public class Stack {
 	}
 	
 	
-	public int pop() throws Exception
+	public int pop() throws StackException
 	{
 		if(isEmpty())
 		{
 //			System.err.println("Stack is Empty.....");
-			throw new Exception("Can not pop from empty Stack");
+			throw new StackException("Can not pop from empty Stack");
 		}
 		
 		return data[top--];
 	}
 	
-	public int peek() throws Exception
+	public int peek() throws StackException
 	{
 		if(isEmpty())
 		{
 
-			throw new Exception("Can not peek from empty Stack");
+			throw new StackException("Can not peek from empty Stack");
 		}
 		
 		return data[top];
