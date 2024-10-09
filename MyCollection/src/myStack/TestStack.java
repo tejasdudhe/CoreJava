@@ -4,15 +4,14 @@ public class TestStack {
 
 	public static void main(String[] args) {
 
-		Stack st = new Stack(5);
+		GenStack st = new GenStack(5);
 		try {
-			st.push(5);
-			st.push(6);
-			st.push(4);
-			st.push(3);
-			st.push(1);
+			st.push("Akash");
+			st.push("Pravin");
+			st.push("Pranav");
+			st.push("ritesh");
+			st.push("navin");
 
-			System.out.println(st.pop());
 			System.out.println(st.pop());
 			System.out.println(st.pop());
 			System.out.println(st.pop());

@@ -1,23 +1,23 @@
 package myStack;
 
-public class Stack  {
-
-	protected int[] data;
+public class GenStack<T> {
+		
+	protected T[] data;
 	private static final int MAX_SIZE = 10;
 	public int top;
 
-	public Stack() 
+	public GenStack() 
 	{
 		this(MAX_SIZE);
 	}
 
-	public Stack(int size) 
+	public GenStack(int size) 
 	{
-		this.data = new int[size];
+		this.data =(T[]) new Object[size];
 		top = -1;
 	}
 	
-	public boolean push(int item) throws StackException
+	public boolean push(T item) throws StackException
 	{
 		if(isFull())
 		{
@@ -30,7 +30,7 @@ public class Stack  {
 	}
 	
 	
-	public int pop() throws StackException
+	public T pop() throws StackException
 	{
 		if(isEmpty())
 		{
@@ -41,7 +41,7 @@ public class Stack  {
 		return data[top--];
 	}
 	
-	public int peek() throws StackException
+	public T peek() throws StackException
 	{
 		if(isEmpty())
 		{
@@ -63,5 +63,5 @@ public class Stack  {
 	{
 		return top == -1;
 	}
-
+	
 }

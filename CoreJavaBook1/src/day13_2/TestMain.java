@@ -1,7 +1,9 @@
-package day12_2;
+package day13_2;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class TestMain {
@@ -19,7 +21,9 @@ public class TestMain {
 			System.out.println("Enter 1 to add Student : ");
 			System.out.println("Enter 2 to delete Student : ");
 			System.out.println("Enter 3 to Search Student : ");
-			System.out.println("Enter 4 to to Exit : ");
+			System.out.println("Enter 4 to Display Accending order by Student Id : ");
+			System.out.println("Enter 5 to Display Accending order by Student Name : ");
+			System.out.println("Enter 6 to to Exit : ");
 
 			System.out.println("Enter Your Choice ");
 			op = sc.nextInt();
@@ -34,9 +38,10 @@ public class TestMain {
 			System.out.println("Enter Student Id : ");
 			st.setStdId(sc.nextInt());
 			
+			sc.nextLine();
 			System.out.println("Enter Student Name : ");
 			st.setName(sc.nextLine());
-			sc.nextLine();
+			
 			System.out.println("Enter Student Marks : ");
 			st.setMarks(sc.nextInt());
 			
@@ -90,7 +95,6 @@ public class TestMain {
 					
 					System.out.println("\n Student Details :  "+s);
 					bl= false;
-					
 				}
 				
 			}
@@ -101,15 +105,31 @@ public class TestMain {
 			}
 			
 			break;
+			
+		case 4:
+			Collections.sort(stud);
+			display(stud);
+			
+			break;
+			
+		case 5:
+			Collections.sort(stud,new StdNameComparator());
+			display(stud);
+			
+			break;
 
 		default: System.out.println("\n Inavlid Input");
 			break;
 		}
 
 		
-		} while (op != 4);
+		} while (op != 6);
 	}
 	
-	
-
+	public static void display(List<Student> st)
+	{
+		for (Student student : st) {
+			System.out.println(student+"\n");
+		}
+	}
 }

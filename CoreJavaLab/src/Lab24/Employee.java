@@ -3,7 +3,7 @@ import java.util.Set;
 
 import java.util.HashSet;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 	private int empNo;
     private String empName;
     private double salary;
@@ -36,6 +36,19 @@ public class Employee {
     public String toString() {
         return "Employee No: " + empNo + ", Name: " + empName + ", Salary: " + salary + ", Skillsets: " + skillsets;
     }
+
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		if(this.empNo > o.empNo)
+			return 1;
+		else if(this.empNo < o.empNo)
+			return -1;
+		
+		return 0;
+	}
+    
+    
 
 	
 }
