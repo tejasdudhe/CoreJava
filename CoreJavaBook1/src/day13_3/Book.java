@@ -45,7 +45,12 @@ public class Book {
 	
 	}
 
-
+	public void display() {
+        System.out.println("Book Id    : " + bookId);
+        System.out.println("Book Name  : " + bookName);
+        System.out.println("Author Name: " + authorName);
+        System.out.println();
+    }
 
 	@Override
 	public String toString() {
